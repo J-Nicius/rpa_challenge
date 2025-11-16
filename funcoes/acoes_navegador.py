@@ -70,6 +70,7 @@ def preencher_telefone(driver, valor: str):
     return _preencher_campo_dinamico(driver, "Phone Number", valor)
 
 def clicar_submit(driver):
+    
     try:
         botao_submit = driver.find_element(By.CSS_SELECTOR, "input[type='submit']")
         botao_submit.click()
