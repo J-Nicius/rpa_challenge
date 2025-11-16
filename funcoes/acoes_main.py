@@ -14,8 +14,8 @@ from funcoes.acoes_navegador import (
 )
 import time
 
-def main():
 
+def main():
     print("--- INÍCIO DA AUTOMAÇÃO COMPLETA DO DESAFIO ---")
     caminho_original_planilha = selecionar_arquivo_excel()
 

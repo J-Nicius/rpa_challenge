@@ -13,7 +13,6 @@ def resource_path(relative_path):
         base_path = os.path.abspath(".")
     return os.path.join(base_path, relative_path)
 
-
 def selecionar_arquivo_excel():
     print("Aguardando a seleção do arquivo Excel...")
     root = tkinter.Tk()
@@ -25,7 +24,6 @@ def selecionar_arquivo_excel():
         filetypes=tipos_de_arquivo,
     )
     return caminho_do_arquivo
-
 
 def copiar_arquivo_para_dados(caminho_original: str):
     if not caminho_original:

@@ -23,7 +23,6 @@ def abrir_navegador_e_site(url: str):
         print(f"Ocorreu um erro ao tentar abrir o navegador: {e}")
         return None
 
-
 def clicar_botao_start(driver):
     try:
         time.sleep(1)
@@ -52,30 +51,23 @@ def _preencher_campo_dinamico(driver, nome_do_campo: str, valor: str):
 def preencher_primeiro_nome(driver, valor: str):
     return _preencher_campo_dinamico(driver, "First Name", valor)
 
-
 def preencher_ultimo_nome(driver, valor: str):
     return _preencher_campo_dinamico(driver, "Last Name", valor)
-
 
 def preencher_nome_empresa(driver, valor: str):
     return _preencher_campo_dinamico(driver, "Company Name", valor)
 
-
 def preencher_funcao(driver, valor: str):
     return _preencher_campo_dinamico(driver, "Role in Company", valor)
-
 
 def preencher_endereco(driver, valor: str):
     return _preencher_campo_dinamico(driver, "Address", valor)
 
-
 def preencher_email(driver, valor: str):
     return _preencher_campo_dinamico(driver, "Email", valor)
 
-
 def preencher_telefone(driver, valor: str):
     return _preencher_campo_dinamico(driver, "Phone Number", valor)
-
 
 def clicar_submit(driver):
     try:

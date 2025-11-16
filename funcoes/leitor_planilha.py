@@ -28,7 +28,6 @@ def ler_dados_planilha(caminho_do_arquivo: str):
         print(f"Ocorreu um erro ao ler a planilha: {e}")
         return None
 
-
 def imprimir_dados(dataframe: DataFrame):
     if dataframe is not None and not dataframe.empty:
         print("\n--- Exibindo Dados Carregados ---")
